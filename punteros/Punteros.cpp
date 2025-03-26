@@ -4,12 +4,12 @@
 //la direccion de memoria es dada o gestionada por la arquitectura del computador y el sitema opertaivo.
 //en C no podemos asignarle la direccion de memoria, pero podemos gestionarlo.
 //mientras que el valor de la variable son los datos que son almacenados en la misma.
-//por ejemplo: A = 34;es el valor de la variable =34; &A = XD23453, es la direccion de memoria;
+//por ejemplo: A = 34;es el  valor de la variable =34; &A = XD23453, es la direccion de memoria;
 
 //intentamos hacer un programa mas eficiente, estamos separando en funciones.
 //mostramos los mensaje del pragrama
 void mensaje();
-//usamos esta funciion para asignarle el valor a la variable;
+//usamos esta funciion para a signarle el valor a la variable;
 void intercambio();
 //usamos esta funciion para mostrar los valores ya intercambiado;
 void mensajeFinal();
