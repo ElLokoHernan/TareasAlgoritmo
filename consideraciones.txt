@@ -1,0 +1,1 @@
+cuando vamos a usar C++ en un vsol stduio code, necesitamos 2  extenciones un editor de texto y un compilador
