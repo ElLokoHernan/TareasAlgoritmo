@@ -7,7 +7,7 @@ Subir todo a Github
 
 
 1) git inint , escribir en la consola.
-2)
+ver si la cuenta esta asociada a la nube, revisar las ramas en el programa vsCode.
 =======
 en mi caso voy a utilizar el compilador MinGW, que luego de seguir los pasos de la instalacion que se encuentra en este link : https://code.visualstudio.com/docs/cpp/config-mingw#_prerequisites.
 pude usar el compilador sin problemas, quiero destacar que c++ trae su propio IDE, pero como tenia la necesidad de ir guardando mi progreso, decidi usar este repositorio, a modo de motivarme a mejorar mis practicas de programacion
