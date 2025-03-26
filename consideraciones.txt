@@ -1,3 +1,3 @@
 cuando vamos a usar C++ en un vsol studio code, necesitamos 2 cositas extenciones un editor de texto(Vsol StudioCode)y un compilador(MinGw)
 en mi caso voy a utilizar el compilador MinGW, que luego de seguir los pasos de la instalacion que se encuentra en este link : https://code.visualstudio.com/docs/cpp/config-mingw#_prerequisites.
-pude usar el compilador sin problemas, quiero destacar que c++ trae su propio IDE, pero como tenia la necesidad de ir guardando mi progreso, decidi usar este repositorio, a modo de motivarme a mejorar mis practicas de programacion
+pude usar el compilador sin problemas, quiero destacar que c++ trae su propio IDE, pero como tenia la necesidad de ir guardando mi progreso, decidi usar este repositorio, a modo de motivarme a mejorar mis practicas de programacion XD.
