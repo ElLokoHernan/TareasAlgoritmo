@@ -5,7 +5,7 @@
 int main(){
     int x = 5;
     int (*y),malloc(sizeof(int));
-    *y = 123;
+    y = &x;
     printf("%d", *y);
     printf("\n%d", x);
     
