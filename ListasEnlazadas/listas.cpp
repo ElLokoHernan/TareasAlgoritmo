@@ -20,8 +20,7 @@ typedef struct nodoProducto{
 void inicializarLista();
 void insertarProducto(tProducto);
 tProducto ingresarProducto();
-
-//void mostrarProductos(tListaProductos*);
+void mostrarProductos(tListaProducto *);
 
 tListaProducto * productos;
 
@@ -30,6 +29,8 @@ int main(){
     inicializarLista();
     tProducto nuevoProducto = ingresarProducto();
     insertarProducto(nuevoProducto);
+
+    mostrarProductos(productos);
 
     return 0;
 }
@@ -59,3 +60,16 @@ void insertarProducto(tProducto pProducto){
     printf("Producto insertado");
 }
 
+void mostrarProductos(tListaProducto * pListaProductos){
+    tListaProducto * listaAux = pListaProductos;
+    printf("\n**LISTA DE PRODUCTOS**");
+    while(listaAux!=NULL){
+        printf("\n------");
+        printf("\nCodigo : %d", listaAux->producto.codProducto);
+        printf("\n Descripcion : %s", listaAux->producto.descripcion);
+        printf("\nPrecio : %f", listaAux->producto.precioUnitario);
+        printf("\n ---------------");
+        listaAux = listaAux->siguiente;
+    }
+printf("\nSaltamos ");
+}
