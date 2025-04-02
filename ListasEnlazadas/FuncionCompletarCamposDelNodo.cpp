@@ -60,13 +60,14 @@ tPaciente ingresarPaciente(){
     return paciente;
 }
 //En esta segunda instacion agreamos la funcion que nos permite ver los datos agregados a nuestro programa, la verdad estoy sorprendido con los resultados porque todos esta funcionando 
-//a tener en cuenta que para mostrar la lista de paciente es necesario pasarle como parametro una variable puntero. al mostrar la lista, en el main, debemos pasar como parametro la variable apuntada.
+//a tener en cuenta que para mostrar la lista de paciente es necesario pasarle como parametro una variable puntero. al mostrar la lista, en el main, debemos pasar como parametro la variable apuntada de form,a global. 
 void mostrarPacientes(tListaPacientes * pListaPacientes){
     tListaPacientes * listaAux = pListaPacientes;
     printf("\n\tLISTA DE PACIENTES");
     while(listaAux!=NULL){
         printf("\n 0Edad del paciente : %d", listaAux ->paciente.edad);
         printf("\n Nombre del paciente : %s", listaAux->paciente.nombre);
+        //tene encuenta que al pedir que los datos float se muestren en 2.2, reducimos los ceron que nos aparecen cuando mostramos la lista.
         printf("\n Peso del paciente : %2.2f", listaAux->paciente.peso);
         printf("\n--------");
         listaAux = listaAux->siguiente;
