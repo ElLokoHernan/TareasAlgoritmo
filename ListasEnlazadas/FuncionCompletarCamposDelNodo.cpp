@@ -21,6 +21,7 @@ void inicializarLista();
 void insertarPaciente(tPaciente);
 tPaciente ingresarPaciente();
 void mostrarPacientes(tListaPacientes *);
+void ingresarCancionenPos(int , tCancion);
 
 tListaPacientes * pacientes;
 
@@ -59,6 +60,9 @@ tPaciente ingresarPaciente(){
   
     return paciente;
 }
+
+
+
 //En esta segunda instacion agreamos la funcion que nos permite ver los datos agregados a nuestro programa, la verdad estoy sorprendido con los resultados porque todos esta funcionando 
 //a tener en cuenta que para mostrar la lista de paciente es necesario pasarle como parametro una variable puntero. al mostrar la lista, en el main, debemos pasar como parametro la variable apuntada de form,a global. 
 void mostrarPacientes(tListaPacientes * pListaPacientes){
