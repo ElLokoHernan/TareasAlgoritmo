@@ -30,6 +30,7 @@ void mostrarLista(tListaReproduccion *);
 int ingresarPosicion();
 //vamos a ir observando como elimina las canciones, es decir si desde arriba o desde abajo
 void eliminarCanciones();
+void eliminarPos();
 
 tListaReproduccion * canciones;
 
@@ -47,6 +48,7 @@ int main(){
     agregarCanciones(nuevaCancion1);
     tCancion nuevaCancion2 = insertarCanciones();
     agregarCanciones(nuevaCancion2);
+    eliminarPos();
 	mostrarLista(canciones); /*   */
     return 0;
 }
@@ -159,6 +161,29 @@ void eliminarCanciones(){
     }
 }
 
+void eliminarPos(){
+    if(listaVacia(canciones)){
+        printf("\nNO HAY ELEMENTOS PARA ELIMINAR");
+        printf("\n");
+    }else{
+        printf("\nbuscar posicion para eliminar :");
+        int p = ingresarPosicion();
+        tListaReproduccion * listAux = canciones;
+        int i;
+        for(i=1;i<p-1;i++){
+            listAux = listAux->siguiente;
+        }
+        tListaReproduccion * eliminarCancion;
+        eliminarCancion = listAux->siguiente;
+        listAux->siguiente = eliminarCancion->siguiente;
+        printf("\ncanion eliminada ");
+        free(eliminarCancion);
+        eliminarCancion = NULL;
+
+    }
+
+
+}
 
 void mostrarLista(tListaReproduccion * pListaCanciones){
     tListaReproduccion * listAux = pListaCanciones;
