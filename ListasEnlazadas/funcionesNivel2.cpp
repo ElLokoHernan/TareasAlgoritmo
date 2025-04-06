@@ -146,11 +146,13 @@ void insertarCancionenPos(int posicion, tCancion pCancion){
 }
 
 void eliminarCanciones(){
+    //la eliminacion de esta forma, siempre elimina el primer dato ingresado, primer nodo. 
     if(listaVacia(canciones)){
         printf("\nNO HAY ELEMENTOS PARA ELIMINAR :");
         printf("\n*********Lista vacia**********");
     }else{
         tListaReproduccion * eliminarCancion;
+        //prestar atencion a la forma en la que se actualiza el puntero
         eliminarCancion = canciones;
         canciones = eliminarCancion->siguiente;
         printf("\n**********");
@@ -162,17 +164,22 @@ void eliminarCanciones(){
 }
 
 void eliminarPos(){
+    //elimina un nodo en una posicion determinado
     if(listaVacia(canciones)){
         printf("\nNO HAY ELEMENTOS PARA ELIMINAR");
         printf("\n");
     }else{
         printf("\nbuscar posicion para eliminar :");
+        //necesitamos la funcion de agregar posicion.
         int p = ingresarPosicion();
         tListaReproduccion * listAux = canciones;
         int i;
         for(i=1;i<p-1;i++){
+        //usamos una variable auxiliar
             listAux = listAux->siguiente;
         }
+        //esta parte es parecido a la anterior funcion
+        //cambiamos la actualizacion del puntero
         tListaReproduccion * eliminarCancion;
         eliminarCancion = listAux->siguiente;
         listAux->siguiente = eliminarCancion->siguiente;

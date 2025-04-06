@@ -1,0 +1,14 @@
+para empezar a trabajar con las pilas debebemos de saber que una pila es una estructura de datos dinamica que tiene como caracteristica el metodo LIFO.
+LIFO el ultimo en entrar, es el primero en salir. o el primero en entrar es el ultimo en salir.
+con esto podemos entender la estructura de pilas como, bien lo dice su nombre, una pila de platos, o una pila de libros.
+es decir, imaginemos que estamos trabajando como mozos y tenemos que lavar los platos, nos trajeron varios platos y los colocamos uno encima del otro en forma horinzontal.
+el primer plato que ordenamos, quedo debajo de los demas, por lo que cuando queramos lavar ese plata, que seria el primero, tenemos que lavar todos los que estan por encima del mismo.
+cumpliendo asi con el concepto de PILAS.
+
+En programacion para algo parecido.
+si bien entendemos que los datos estan agregados uno a tras del otro, y enlazados por una variable puntero, el primer elemento no tiene antesesor y el ultimo elemento no tiene consecutivo.
+por lo que podemos imaginarnos que el primer y el ultimo elemento son particulares, podemos localizarlos y trabajar con ellos para saber por ejemplo.
+si la pila esta vacia, cuantos elemento tiene la pila.
+siempre que querramos eliminar un elemento se hace desde el ultimo o la sima de la pila.
+como si fuera que al lavar cada plato, lo vamos sacando y poniendo en otra parte, de la misma manera trabaja la pila.
+
