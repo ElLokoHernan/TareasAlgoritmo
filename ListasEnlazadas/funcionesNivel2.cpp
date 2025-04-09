@@ -43,12 +43,12 @@ int main(){
     int posicion = ingresarPosicion();
     tCancion nuevaCancion4 = insertarCanciones();
     insertarCancionenPos(posicion, nuevaCancion4);
-    eliminarCanciones();
+    /*eliminarCanciones();
     tCancion nuevaCancion1 = insertarCanciones();
     agregarCanciones(nuevaCancion1);
     tCancion nuevaCancion2 = insertarCanciones();
     agregarCanciones(nuevaCancion2);
-    eliminarPos();
+    eliminarPos();*/
 	mostrarLista(canciones); /*   */
     return 0;
 }
